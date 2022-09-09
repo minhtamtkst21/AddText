@@ -33,37 +33,42 @@ namespace AddText
             this.ptb = new System.Windows.Forms.PictureBox();
             this.pnlFill = new System.Windows.Forms.Panel();
             this.pnlRight = new System.Windows.Forms.Panel();
+            this.dtgFileExcel = new System.Windows.Forms.DataGridView();
+            this.label9 = new System.Windows.Forms.Label();
             this.dtgListText = new System.Windows.Forms.DataGridView();
             this.pnlRightTop = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.pnlLeft = new System.Windows.Forms.Panel();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.btnLuuChu = new System.Windows.Forms.Button();
+            this.btnXemTruocChu = new System.Windows.Forms.Button();
+            this.txtTenText = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.chkCanGiuaDoc = new System.Windows.Forms.CheckBox();
+            this.chkCanGiuaNgang = new System.Windows.Forms.CheckBox();
             this.cboFontChu = new System.Windows.Forms.ComboBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.chkStrikeout = new System.Windows.Forms.CheckBox();
+            this.chkUnderline = new System.Windows.Forms.CheckBox();
+            this.chkItalic = new System.Windows.Forms.CheckBox();
+            this.chkBold = new System.Windows.Forms.CheckBox();
+            this.chkRegular = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtWidth = new System.Windows.Forms.TextBox();
+            this.txtViTriNgang = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtHeight = new System.Windows.Forms.TextBox();
+            this.txtViTriDoc = new System.Windows.Forms.TextBox();
             this.txtSizeChu = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pnlBot = new System.Windows.Forms.Panel();
+            this.btnXemTruoc = new System.Windows.Forms.Button();
             this.pnlTop = new System.Windows.Forms.Panel();
+            this.btnTaiExcel = new System.Windows.Forms.Button();
             this.btnThemHinhAnh = new System.Windows.Forms.Button();
-            this.txtTenText = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ptb)).BeginInit();
             this.pnlFill.SuspendLayout();
             this.pnlRight.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgFileExcel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgListText)).BeginInit();
             this.pnlRightTop.SuspendLayout();
             this.pnlLeft.SuspendLayout();
@@ -88,7 +93,7 @@ namespace AddText
             this.ptb.Location = new System.Drawing.Point(208, 63);
             this.ptb.Margin = new System.Windows.Forms.Padding(5);
             this.ptb.Name = "ptb";
-            this.ptb.Size = new System.Drawing.Size(590, 372);
+            this.ptb.Size = new System.Drawing.Size(590, 456);
             this.ptb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptb.TabIndex = 0;
             this.ptb.TabStop = false;
@@ -103,28 +108,48 @@ namespace AddText
             this.pnlFill.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlFill.Location = new System.Drawing.Point(0, 0);
             this.pnlFill.Name = "pnlFill";
-            this.pnlFill.Size = new System.Drawing.Size(1103, 496);
+            this.pnlFill.Size = new System.Drawing.Size(1103, 580);
             this.pnlFill.TabIndex = 2;
             // 
             // pnlRight
             // 
+            this.pnlRight.Controls.Add(this.dtgFileExcel);
+            this.pnlRight.Controls.Add(this.label9);
             this.pnlRight.Controls.Add(this.dtgListText);
             this.pnlRight.Controls.Add(this.pnlRightTop);
             this.pnlRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.pnlRight.Location = new System.Drawing.Point(806, 55);
             this.pnlRight.Name = "pnlRight";
-            this.pnlRight.Size = new System.Drawing.Size(297, 388);
+            this.pnlRight.Size = new System.Drawing.Size(297, 472);
             this.pnlRight.TabIndex = 4;
+            // 
+            // dtgFileExcel
+            // 
+            this.dtgFileExcel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgFileExcel.Location = new System.Drawing.Point(0, 291);
+            this.dtgFileExcel.Name = "dtgFileExcel";
+            this.dtgFileExcel.RowHeadersWidth = 51;
+            this.dtgFileExcel.RowTemplate.Height = 24;
+            this.dtgFileExcel.Size = new System.Drawing.Size(297, 181);
+            this.dtgFileExcel.TabIndex = 23;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(33, 248);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(251, 26);
+            this.label9.TabIndex = 24;
+            this.label9.Text = "Danh sách thông tin exel";
             // 
             // dtgListText
             // 
             this.dtgListText.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgListText.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgListText.Location = new System.Drawing.Point(0, 59);
             this.dtgListText.Name = "dtgListText";
             this.dtgListText.RowHeadersWidth = 51;
             this.dtgListText.RowTemplate.Height = 24;
-            this.dtgListText.Size = new System.Drawing.Size(297, 329);
+            this.dtgListText.Size = new System.Drawing.Size(297, 173);
             this.dtgListText.TabIndex = 0;
             // 
             // pnlRightTop
@@ -147,20 +172,22 @@ namespace AddText
             // 
             // pnlLeft
             // 
+            this.pnlLeft.Controls.Add(this.btnLuuChu);
+            this.pnlLeft.Controls.Add(this.btnXemTruocChu);
             this.pnlLeft.Controls.Add(this.txtTenText);
             this.pnlLeft.Controls.Add(this.label8);
-            this.pnlLeft.Controls.Add(this.checkBox7);
-            this.pnlLeft.Controls.Add(this.checkBox6);
+            this.pnlLeft.Controls.Add(this.chkCanGiuaDoc);
+            this.pnlLeft.Controls.Add(this.chkCanGiuaNgang);
             this.pnlLeft.Controls.Add(this.cboFontChu);
-            this.pnlLeft.Controls.Add(this.checkBox5);
-            this.pnlLeft.Controls.Add(this.checkBox4);
-            this.pnlLeft.Controls.Add(this.checkBox3);
-            this.pnlLeft.Controls.Add(this.checkBox2);
-            this.pnlLeft.Controls.Add(this.checkBox1);
+            this.pnlLeft.Controls.Add(this.chkStrikeout);
+            this.pnlLeft.Controls.Add(this.chkUnderline);
+            this.pnlLeft.Controls.Add(this.chkItalic);
+            this.pnlLeft.Controls.Add(this.chkBold);
+            this.pnlLeft.Controls.Add(this.chkRegular);
             this.pnlLeft.Controls.Add(this.label6);
-            this.pnlLeft.Controls.Add(this.txtWidth);
+            this.pnlLeft.Controls.Add(this.txtViTriNgang);
             this.pnlLeft.Controls.Add(this.label5);
-            this.pnlLeft.Controls.Add(this.txtHeight);
+            this.pnlLeft.Controls.Add(this.txtViTriDoc);
             this.pnlLeft.Controls.Add(this.txtSizeChu);
             this.pnlLeft.Controls.Add(this.label4);
             this.pnlLeft.Controls.Add(this.label3);
@@ -169,30 +196,72 @@ namespace AddText
             this.pnlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlLeft.Location = new System.Drawing.Point(0, 55);
             this.pnlLeft.Name = "pnlLeft";
-            this.pnlLeft.Size = new System.Drawing.Size(200, 388);
+            this.pnlLeft.Size = new System.Drawing.Size(200, 472);
             this.pnlLeft.TabIndex = 3;
             // 
-            // checkBox7
+            // btnLuuChu
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox7.Location = new System.Drawing.Point(12, 263);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(117, 22);
-            this.checkBox7.TabIndex = 21;
-            this.checkBox7.Text = "Căn giữa dọc";
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.btnLuuChu.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuuChu.Location = new System.Drawing.Point(15, 427);
+            this.btnLuuChu.Margin = new System.Windows.Forms.Padding(5);
+            this.btnLuuChu.Name = "btnLuuChu";
+            this.btnLuuChu.Size = new System.Drawing.Size(150, 40);
+            this.btnLuuChu.TabIndex = 24;
+            this.btnLuuChu.Text = "Lưu chữ";
+            this.btnLuuChu.UseVisualStyleBackColor = true;
+            this.btnLuuChu.Click += new System.EventHandler(this.btnLuuChu_Click);
             // 
-            // checkBox6
+            // btnXemTruocChu
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox6.Location = new System.Drawing.Point(12, 235);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(132, 22);
-            this.checkBox6.TabIndex = 20;
-            this.checkBox6.Text = "Căn giữa ngang";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.btnXemTruocChu.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXemTruocChu.Location = new System.Drawing.Point(15, 377);
+            this.btnXemTruocChu.Margin = new System.Windows.Forms.Padding(5);
+            this.btnXemTruocChu.Name = "btnXemTruocChu";
+            this.btnXemTruocChu.Size = new System.Drawing.Size(150, 40);
+            this.btnXemTruocChu.TabIndex = 5;
+            this.btnXemTruocChu.Text = "Xem trước";
+            this.btnXemTruocChu.UseVisualStyleBackColor = true;
+            this.btnXemTruocChu.Click += new System.EventHandler(this.btnXemTruocChu_Click);
+            // 
+            // txtTenText
+            // 
+            this.txtTenText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenText.Location = new System.Drawing.Point(87, 59);
+            this.txtTenText.Name = "txtTenText";
+            this.txtTenText.Size = new System.Drawing.Size(100, 24);
+            this.txtTenText.TabIndex = 23;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(12, 59);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(69, 18);
+            this.label8.TabIndex = 22;
+            this.label8.Text = "Tên Text:";
+            // 
+            // chkCanGiuaDoc
+            // 
+            this.chkCanGiuaDoc.AutoSize = true;
+            this.chkCanGiuaDoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkCanGiuaDoc.Location = new System.Drawing.Point(12, 263);
+            this.chkCanGiuaDoc.Name = "chkCanGiuaDoc";
+            this.chkCanGiuaDoc.Size = new System.Drawing.Size(117, 22);
+            this.chkCanGiuaDoc.TabIndex = 21;
+            this.chkCanGiuaDoc.Text = "Căn giữa dọc";
+            this.chkCanGiuaDoc.UseVisualStyleBackColor = true;
+            // 
+            // chkCanGiuaNgang
+            // 
+            this.chkCanGiuaNgang.AutoSize = true;
+            this.chkCanGiuaNgang.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkCanGiuaNgang.Location = new System.Drawing.Point(12, 235);
+            this.chkCanGiuaNgang.Name = "chkCanGiuaNgang";
+            this.chkCanGiuaNgang.Size = new System.Drawing.Size(132, 22);
+            this.chkCanGiuaNgang.TabIndex = 20;
+            this.chkCanGiuaNgang.Text = "Căn giữa ngang";
+            this.chkCanGiuaNgang.UseVisualStyleBackColor = true;
             // 
             // cboFontChu
             // 
@@ -203,60 +272,60 @@ namespace AddText
             this.cboFontChu.Size = new System.Drawing.Size(100, 26);
             this.cboFontChu.TabIndex = 4;
             // 
-            // checkBox5
+            // chkStrikeout
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox5.Location = new System.Drawing.Point(35, 347);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(89, 22);
-            this.checkBox5.TabIndex = 19;
-            this.checkBox5.Text = "Strikeout";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.chkStrikeout.AutoSize = true;
+            this.chkStrikeout.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkStrikeout.Location = new System.Drawing.Point(35, 347);
+            this.chkStrikeout.Name = "chkStrikeout";
+            this.chkStrikeout.Size = new System.Drawing.Size(89, 22);
+            this.chkStrikeout.TabIndex = 19;
+            this.chkStrikeout.Text = "Strikeout";
+            this.chkStrikeout.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // chkUnderline
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox4.Location = new System.Drawing.Point(95, 319);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(92, 22);
-            this.checkBox4.TabIndex = 18;
-            this.checkBox4.Text = "Underline";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.chkUnderline.AutoSize = true;
+            this.chkUnderline.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkUnderline.Location = new System.Drawing.Point(95, 319);
+            this.chkUnderline.Name = "chkUnderline";
+            this.chkUnderline.Size = new System.Drawing.Size(92, 22);
+            this.chkUnderline.TabIndex = 18;
+            this.chkUnderline.Text = "Underline";
+            this.chkUnderline.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // chkItalic
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.Location = new System.Drawing.Point(8, 319);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(59, 22);
-            this.checkBox3.TabIndex = 17;
-            this.checkBox3.Text = "Italic";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.chkItalic.AutoSize = true;
+            this.chkItalic.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkItalic.Location = new System.Drawing.Point(8, 319);
+            this.chkItalic.Name = "chkItalic";
+            this.chkItalic.Size = new System.Drawing.Size(59, 22);
+            this.chkItalic.TabIndex = 17;
+            this.chkItalic.Text = "Italic";
+            this.chkItalic.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // chkBold
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.Location = new System.Drawing.Point(95, 291);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(60, 22);
-            this.checkBox2.TabIndex = 16;
-            this.checkBox2.Text = "Bold";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.chkBold.AutoSize = true;
+            this.chkBold.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkBold.Location = new System.Drawing.Point(95, 291);
+            this.chkBold.Name = "chkBold";
+            this.chkBold.Size = new System.Drawing.Size(60, 22);
+            this.chkBold.TabIndex = 16;
+            this.chkBold.Text = "Bold";
+            this.chkBold.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // chkRegular
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(8, 291);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(81, 22);
-            this.checkBox1.TabIndex = 15;
-            this.checkBox1.Text = "Regular";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chkRegular.AutoSize = true;
+            this.chkRegular.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkRegular.Location = new System.Drawing.Point(8, 291);
+            this.chkRegular.Name = "chkRegular";
+            this.chkRegular.Size = new System.Drawing.Size(81, 22);
+            this.chkRegular.TabIndex = 15;
+            this.chkRegular.Text = "Regular";
+            this.chkRegular.UseVisualStyleBackColor = true;
             // 
             // label6
             // 
@@ -268,13 +337,13 @@ namespace AddText
             this.label6.TabIndex = 9;
             this.label6.Text = "Style chữ:";
             // 
-            // txtWidth
+            // txtViTriNgang
             // 
-            this.txtWidth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtWidth.Location = new System.Drawing.Point(87, 189);
-            this.txtWidth.Name = "txtWidth";
-            this.txtWidth.Size = new System.Drawing.Size(100, 24);
-            this.txtWidth.TabIndex = 8;
+            this.txtViTriNgang.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtViTriNgang.Location = new System.Drawing.Point(87, 189);
+            this.txtViTriNgang.Name = "txtViTriNgang";
+            this.txtViTriNgang.Size = new System.Drawing.Size(100, 24);
+            this.txtViTriNgang.TabIndex = 8;
             // 
             // label5
             // 
@@ -286,13 +355,13 @@ namespace AddText
             this.label5.TabIndex = 7;
             this.label5.Text = "Ngang:";
             // 
-            // txtHeight
+            // txtViTriDoc
             // 
-            this.txtHeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHeight.Location = new System.Drawing.Point(87, 159);
-            this.txtHeight.Name = "txtHeight";
-            this.txtHeight.Size = new System.Drawing.Size(100, 24);
-            this.txtHeight.TabIndex = 6;
+            this.txtViTriDoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtViTriDoc.Location = new System.Drawing.Point(87, 159);
+            this.txtViTriDoc.Name = "txtViTriDoc";
+            this.txtViTriDoc.Size = new System.Drawing.Size(100, 24);
+            this.txtViTriDoc.TabIndex = 6;
             // 
             // txtSizeChu
             // 
@@ -343,23 +412,47 @@ namespace AddText
             // 
             // pnlBot
             // 
-            this.pnlBot.Controls.Add(this.button2);
+            this.pnlBot.Controls.Add(this.btnXemTruoc);
             this.pnlBot.Controls.Add(this.btnThemChu);
             this.pnlBot.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlBot.Location = new System.Drawing.Point(0, 443);
+            this.pnlBot.Location = new System.Drawing.Point(0, 527);
             this.pnlBot.Name = "pnlBot";
             this.pnlBot.Size = new System.Drawing.Size(1103, 53);
             this.pnlBot.TabIndex = 2;
             // 
+            // btnXemTruoc
+            // 
+            this.btnXemTruoc.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXemTruoc.Location = new System.Drawing.Point(779, 8);
+            this.btnXemTruoc.Margin = new System.Windows.Forms.Padding(5);
+            this.btnXemTruoc.Name = "btnXemTruoc";
+            this.btnXemTruoc.Size = new System.Drawing.Size(150, 40);
+            this.btnXemTruoc.TabIndex = 4;
+            this.btnXemTruoc.Text = "Xem trước";
+            this.btnXemTruoc.UseVisualStyleBackColor = true;
+            this.btnXemTruoc.Click += new System.EventHandler(this.btnXemTruoc_Click);
+            // 
             // pnlTop
             // 
-            this.pnlTop.Controls.Add(this.button1);
+            this.pnlTop.Controls.Add(this.btnTaiExcel);
             this.pnlTop.Controls.Add(this.btnThemHinhAnh);
             this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTop.Location = new System.Drawing.Point(0, 0);
             this.pnlTop.Name = "pnlTop";
             this.pnlTop.Size = new System.Drawing.Size(1103, 55);
             this.pnlTop.TabIndex = 1;
+            // 
+            // btnTaiExcel
+            // 
+            this.btnTaiExcel.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTaiExcel.Location = new System.Drawing.Point(165, 5);
+            this.btnTaiExcel.Margin = new System.Windows.Forms.Padding(5);
+            this.btnTaiExcel.Name = "btnTaiExcel";
+            this.btnTaiExcel.Size = new System.Drawing.Size(150, 40);
+            this.btnTaiExcel.TabIndex = 4;
+            this.btnTaiExcel.Text = "Tải file excel";
+            this.btnTaiExcel.UseVisualStyleBackColor = true;
+            this.btnTaiExcel.Visible = false;
             // 
             // btnThemHinhAnh
             // 
@@ -373,51 +466,11 @@ namespace AddText
             this.btnThemHinhAnh.UseVisualStyleBackColor = true;
             this.btnThemHinhAnh.Click += new System.EventHandler(this.btnThemHinhAnh_Click);
             // 
-            // txtTenText
-            // 
-            this.txtTenText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenText.Location = new System.Drawing.Point(87, 59);
-            this.txtTenText.Name = "txtTenText";
-            this.txtTenText.Size = new System.Drawing.Size(100, 24);
-            this.txtTenText.TabIndex = 23;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(12, 59);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(69, 18);
-            this.label8.TabIndex = 22;
-            this.label8.Text = "Tên Text:";
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(165, 5);
-            this.button1.Margin = new System.Windows.Forms.Padding(5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 40);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Lưu chữ";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(779, 8);
-            this.button2.Margin = new System.Windows.Forms.Padding(5);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(150, 40);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Xem trước";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // frmThemChu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1103, 496);
+            this.ClientSize = new System.Drawing.Size(1103, 580);
             this.Controls.Add(this.pnlFill);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5);
@@ -427,6 +480,8 @@ namespace AddText
             ((System.ComponentModel.ISupportInitialize)(this.ptb)).EndInit();
             this.pnlFill.ResumeLayout(false);
             this.pnlRight.ResumeLayout(false);
+            this.pnlRight.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgFileExcel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgListText)).EndInit();
             this.pnlRightTop.ResumeLayout(false);
             this.pnlRightTop.PerformLayout();
@@ -449,28 +504,32 @@ namespace AddText
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtWidth;
+        private System.Windows.Forms.TextBox txtViTriNgang;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtHeight;
+        private System.Windows.Forms.TextBox txtViTriDoc;
         private System.Windows.Forms.TextBox txtSizeChu;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox chkRegular;
+        private System.Windows.Forms.CheckBox chkBold;
+        private System.Windows.Forms.CheckBox chkStrikeout;
+        private System.Windows.Forms.CheckBox chkUnderline;
+        private System.Windows.Forms.CheckBox chkItalic;
         private System.Windows.Forms.ComboBox cboFontChu;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox6;
+        private System.Windows.Forms.CheckBox chkCanGiuaDoc;
+        private System.Windows.Forms.CheckBox chkCanGiuaNgang;
         private System.Windows.Forms.Panel pnlRight;
-        private System.Windows.Forms.DataGridView dtgListText;
         private System.Windows.Forms.Panel pnlRightTop;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtTenText;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnXemTruoc;
+        private System.Windows.Forms.DataGridView dtgListText;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnLuuChu;
+        private System.Windows.Forms.Button btnXemTruocChu;
+        private System.Windows.Forms.DataGridView dtgFileExcel;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button btnTaiExcel;
     }
 }
 
